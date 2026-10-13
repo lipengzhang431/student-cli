@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+students.json
+.pytest_cache/
