@@ -22,3 +22,29 @@ def greet(name, prefix="Hello"):
 
 print(greet("Tom"))
 print(greet("Tom", prefix="Hi"))
+
+def min_max(nums):
+    return min(nums), max(nums)
+
+low, high = min_max([3, 1, 9])
+print(low, high)
+
+def main(score_input=None):
+    # 如果没有传入参数，则从控制台读取
+    if score_input is None:
+        score = input("请输入成绩：")
+    else:
+        score = score_input
+    
+    score = int(score)
+    if score >= 90:
+        print("A")
+    elif score >= 80:
+        print("B")
+    elif score >= 60:
+        print("C")
+    else:
+        print("D")
+
+if __name__ == "__main__":
+    main()

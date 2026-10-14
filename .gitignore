@@ -5,3 +5,5 @@ __pycache__/
 .idea/
 students.json
 .pytest_cache/
+.continue/
+tests/
