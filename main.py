@@ -29,6 +29,12 @@ def min_max(nums):
 low, high = min_max([3, 1, 9])
 print(low, high)
 
+def summarize(nums):
+    """返回列表的最大值、最小值、平均值"""
+    if not nums:
+        raise ValueError("列表不能为空")
+    return max(nums), min(nums), sum(nums) / len(nums)
+
 def main(score_input=None):
     # 如果没有传入参数，则从控制台读取
     if score_input is None:
@@ -46,5 +52,9 @@ def main(score_input=None):
     else:
         print("D")
 
+def add_student(name, scores):
+
 if __name__ == "__main__":
-    main()
+    hi, lo, avg = summarize([88, 92, 75, 61, 100])
+    print(f"最大值: {hi}, 最小值: {lo}, 平均值: {avg:.2f}")
+
